@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>guesswho - Ramon Sanchez Garcia: Fichero Fuente include/quienesquien.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">guesswho - Ramon Sanchez Garcia
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">quienesquien.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="quienesquien_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">Estructura de Datos 2017/2018 - Practica Final &quot;Quien es Quien&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">Nombre: Ramon Sanchez Garcia</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">Correo: chentaco@correo.ugr.es</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef _QUIENESQUIEN_H_</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define _QUIENESQUIEN_H_</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define DEBUG_QUIENESQUIEN 0</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;pregunta.h&quot;</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;bintree.h&quot;</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classQuienEsQuien.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="classQuienEsQuien.html">QuienEsQuien</a>{</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    vector&lt;string&gt; personajes;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    vector&lt;string&gt; atributos;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    vector&lt;vector&lt;bool&gt;&gt; tablero;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;</a> arbol;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> jugada_actual;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classQuienEsQuien.html">QuienEsQuien</a>();</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classQuienEsQuien.html">QuienEsQuien</a>(<span class="keyword">const</span> <a class="code" href="classQuienEsQuien.html">QuienEsQuien</a> &amp;quienEsQuien);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    ~<a class="code" href="classQuienEsQuien.html">QuienEsQuien</a>();</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> limpiar();</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="classQuienEsQuien.html">QuienEsQuien</a>&amp; operator = (<span class="keyword">const</span> <a class="code" href="classQuienEsQuien.html">QuienEsQuien</a> &amp;quienEsQuien);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">friend</span> istream&amp; operator &gt;&gt; (istream&amp; is, <a class="code" href="classQuienEsQuien.html">QuienEsQuien</a> &amp;quienEsQuien);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">friend</span> ostream&amp; operator &lt;&lt; (ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classQuienEsQuien.html">QuienEsQuien</a> &amp;quienEsQuien);</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">void</span> mostrar_estructuras_leidas();</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;</a> crear_arbol();</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">void</span> usar_arbol(<a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;</a> arbol_nuevo);</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordtype">void</span> iniciar_juego();</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    set&lt;string&gt; informacion_jugada(<a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> jugada_actual);</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    set&lt;string&gt; union_jugadas(set&lt;string&gt; primera, set&lt;string&gt; segunda);</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordtype">void</span> escribir_arbol_completo() <span class="keyword">const</span>;</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordtype">void</span> eliminar_nodos_redundantes();</div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordtype">void</span> eliminar_nodos_redundantes(<a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> n);</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordtype">bool</span> tengo_hijos_nulos(<a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> n);</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordtype">bool</span> ajuste_nodos_nulos(<a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> n);</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordtype">float</span> profundidad_promedio_hojas();</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordtype">int</span> contar(<a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> nodo);</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keywordtype">int</span> total_profundidad(<a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> n, <span class="keywordtype">int</span> acum);</div><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    pair&lt;string,string&gt; info_jugada(<a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> n, <span class="keywordtype">bool</span> valor);</div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordtype">void</span> insertar_jugador(<span class="keywordtype">string</span> nombre,vector&lt;bool&gt; nuevo);</div><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordtype">bool</span> esta_vector(vector&lt;bool&gt; prueba);</div><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div><div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordtype">void</span> eliminar_jugador(<span class="keywordtype">string</span> nombre);</div><div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;</div><div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;</a> crear_arbol_mejorado();</div><div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;</div><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keywordtype">int</span> posicion_entropia(vector&lt;vector&lt;bool&gt;&gt; matriz, vector&lt;string&gt; atri);</div><div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div><div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="keywordtype">void</span> hijo_izquierda(vector&lt;vector&lt;bool&gt;&gt; matriz, <span class="keywordtype">int</span> posicion, vector&lt;string&gt; atri, <a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> n, vector&lt;string&gt; per);</div><div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="keywordtype">void</span> hijo_derecha(vector&lt;vector&lt;bool&gt;&gt; matriz, <span class="keywordtype">int</span> posicion, vector&lt;string&gt; atri, <a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> n, vector&lt;string&gt; per);</div><div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;</div><div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    vector&lt;vector&lt;bool&gt;&gt; pelador(vector&lt;vector&lt;bool&gt;&gt; matriz, <span class="keywordtype">int</span> posicion, <span class="keywordtype">bool</span> valor, vector&lt;string&gt; &amp; per);</div><div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;</div><div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="keywordtype">void</span> tablero_aleatorio(<span class="keywordtype">int</span> numero_de_personajes);</div><div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;};</div><div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;</div><div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classbintree_html"><div class="ttname"><a href="classbintree.html">bintree&lt; Pregunta &gt;</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classQuienEsQuien_html"><div class="ttname"><a href="classQuienEsQuien.html">QuienEsQuien</a></div><div class="ttdoc">T.D.A. QuienEsQuien. </div><div class="ttdef"><b>Definition:</b> quienesquien.h:46</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,626 @@
+\hypertarget{classQuienEsQuien}{}\section{Referencia de la Clase Quien\+Es\+Quien}
+\label{classQuienEsQuien}\index{Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+
+
+T.\+D.\+A. \hyperlink{classQuienEsQuien}{Quien\+Es\+Quien}.  
+
+
+
+
+{\ttfamily \#include $<$quienesquien.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQuienEsQuien_a2942486f1ff134fec70e5d21d7916a2e}{Quien\+Es\+Quien} ()\hypertarget{classQuienEsQuien_a2942486f1ff134fec70e5d21d7916a2e}{}\label{classQuienEsQuien_a2942486f1ff134fec70e5d21d7916a2e}
+
+\begin{DoxyCompactList}\small\item\em Constructor basico de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classQuienEsQuien_a362b7513eba83170d18d98946bc01d87}{Quien\+Es\+Quien} (const \hyperlink{classQuienEsQuien}{Quien\+Es\+Quien} \&quien\+Es\+Quien)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\hyperlink{classQuienEsQuien_ade80093df9e450c6e37e8992da112a70}{$\sim$\+Quien\+Es\+Quien} ()\hypertarget{classQuienEsQuien_ade80093df9e450c6e37e8992da112a70}{}\label{classQuienEsQuien_ade80093df9e450c6e37e8992da112a70}
+
+\begin{DoxyCompactList}\small\item\em Destructor del pregunta. \end{DoxyCompactList}\item 
+void \hyperlink{classQuienEsQuien_a17703bc3277c2846fa67f857894366cd}{limpiar} ()\hypertarget{classQuienEsQuien_a17703bc3277c2846fa67f857894366cd}{}\label{classQuienEsQuien_a17703bc3277c2846fa67f857894366cd}
+
+\begin{DoxyCompactList}\small\item\em Vacia todos los datos del \hyperlink{classQuienEsQuien}{Quien\+Es\+Quien} receptor. \end{DoxyCompactList}\item 
+\hyperlink{classQuienEsQuien}{Quien\+Es\+Quien} \& \hyperlink{classQuienEsQuien_ae7a4139787934cca03996687460935dd}{operator=} (const \hyperlink{classQuienEsQuien}{Quien\+Es\+Quien} \&quien\+Es\+Quien)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de asignacion. \end{DoxyCompactList}\item 
+void \hyperlink{classQuienEsQuien_a67a107f9ffee5bf65cc0884fa39d66cf}{mostrar\+\_\+estructuras\+\_\+leidas} ()\hypertarget{classQuienEsQuien_a67a107f9ffee5bf65cc0884fa39d66cf}{}\label{classQuienEsQuien_a67a107f9ffee5bf65cc0884fa39d66cf}
+
+\begin{DoxyCompactList}\small\item\em Escribe en la salida estandard las estructuras atributos, personajes y tablero. \end{DoxyCompactList}\item 
+\hyperlink{classbintree}{bintree}$<$ \hyperlink{classPregunta}{Pregunta} $>$ \hyperlink{classQuienEsQuien_a2af507d54ac1d74f98ee5694fccf0406}{crear\+\_\+arbol} ()\hypertarget{classQuienEsQuien_a2af507d54ac1d74f98ee5694fccf0406}{}\label{classQuienEsQuien_a2af507d54ac1d74f98ee5694fccf0406}
+
+\begin{DoxyCompactList}\small\item\em Este metodo construye el arbol de preguntas para todos los personajes del tablero. \end{DoxyCompactList}\item 
+void \hyperlink{classQuienEsQuien_a0949bd026c2beeaacbf36fd0ba6fc3a9}{usar\+\_\+arbol} (\hyperlink{classbintree}{bintree}$<$ \hyperlink{classPregunta}{Pregunta} $>$ arbol\+\_\+nuevo)
+\begin{DoxyCompactList}\small\item\em Sustituye el arbol actual por el arbol pasado por parmetro. \end{DoxyCompactList}\item 
+void \hyperlink{classQuienEsQuien_a381bcd553e7c0231bb1f33e67ae3c653}{iniciar\+\_\+juego} ()
+\begin{DoxyCompactList}\small\item\em Inicializa el juego. \end{DoxyCompactList}\item 
+set$<$ string $>$ \hyperlink{classQuienEsQuien_a16816dd39d95ad489e44469f89fabbd4}{informacion\+\_\+jugada} (\hyperlink{classbintree}{bintree}$<$ \hyperlink{classPregunta}{Pregunta} $>$\+::node jugada\+\_\+actual)
+\begin{DoxyCompactList}\small\item\em Dado un estado del tablero devuelve los nombres de los personajes que aun no han sido tumbados en el tablero. \end{DoxyCompactList}\item 
+set$<$ string $>$ \hyperlink{classQuienEsQuien_a60fd517d09369436bcfc6914dd964e6a}{union\+\_\+jugadas} (set$<$ string $>$ primera, set$<$ string $>$ segunda)
+\begin{DoxyCompactList}\small\item\em Metodo auxiliar, utilizado para unir dos set. \end{DoxyCompactList}\item 
+void \hyperlink{classQuienEsQuien_a1b8c88bef5056bdd366810d180d29d94}{escribir\+\_\+arbol\+\_\+completo} () const \hypertarget{classQuienEsQuien_a1b8c88bef5056bdd366810d180d29d94}{}\label{classQuienEsQuien_a1b8c88bef5056bdd366810d180d29d94}
+
+\begin{DoxyCompactList}\small\item\em Escribe el arbol generado en la salida estandard. \end{DoxyCompactList}\item 
+void \hyperlink{classQuienEsQuien_a010586f119ad0966d35c64382a64e3bc}{eliminar\+\_\+nodos\+\_\+redundantes} ()
+\begin{DoxyCompactList}\small\item\em Metodo que modifica el arbol de preguntas para que haya preguntas redundantes. \end{DoxyCompactList}\item 
+void \hyperlink{classQuienEsQuien_a0868e2c4013917db4cd79474c42e0386}{eliminar\+\_\+nodos\+\_\+redundantes} (\hyperlink{classbintree}{bintree}$<$ \hyperlink{classPregunta}{Pregunta} $>$\+::node n)
+\begin{DoxyCompactList}\small\item\em Metodo que modifica el arbol de preguntas para que haya preguntas redundantes. \end{DoxyCompactList}\item 
+bool \hyperlink{classQuienEsQuien_a3b283af407756659fb75fba1725f84c0}{tengo\+\_\+hijos\+\_\+nulos} (\hyperlink{classbintree}{bintree}$<$ \hyperlink{classPregunta}{Pregunta} $>$\+::node n)
+\begin{DoxyCompactList}\small\item\em Metodo auxiliar para comprobar si un nodo tiene hijos nulos. \end{DoxyCompactList}\item 
+bool \hyperlink{classQuienEsQuien_a420bdb4aa9eafeac062279e3968f8f1f}{ajuste\+\_\+nodos\+\_\+nulos} (\hyperlink{classbintree}{bintree}$<$ \hyperlink{classPregunta}{Pregunta} $>$\+::node n)
+\begin{DoxyCompactList}\small\item\em Metodo para ajustar los hijos nulos. \end{DoxyCompactList}\item 
+float \hyperlink{classQuienEsQuien_ae999ad6c20f9ebf6a710060b99741126}{profundidad\+\_\+promedio\+\_\+hojas} ()
+\begin{DoxyCompactList}\small\item\em Este metodo permite calcular la media de la profundidad de las hojas del arbol. Este valor representa el numero (promedio) de preguntas necesarias para adivinar cada personaje. A menor profundidad promedio, mejor solucion. Esta metrica es un indicador para evaluar la calidad de vuestra solucion. \end{DoxyCompactList}\item 
+int \hyperlink{classQuienEsQuien_a39024ba42b698f04960add57b177aa9f}{contar} (\hyperlink{classbintree}{bintree}$<$ \hyperlink{classPregunta}{Pregunta} $>$\+::node nodo)
+\begin{DoxyCompactList}\small\item\em Metodo para contar el numero de nodos a partir de un nodo. \end{DoxyCompactList}\item 
+int \hyperlink{classQuienEsQuien_a1535e054736d9920e8859b21697e372e}{total\+\_\+profundidad} (\hyperlink{classbintree}{bintree}$<$ \hyperlink{classPregunta}{Pregunta} $>$\+::node n, int acum)
+\begin{DoxyCompactList}\small\item\em Metodo para obtener el total de profundidades de cada nodo. \end{DoxyCompactList}\item 
+pair$<$ string, string $>$ \hyperlink{classQuienEsQuien_abab84d08b95044e18858aae863337ea1}{info\+\_\+jugada} (\hyperlink{classbintree}{bintree}$<$ \hyperlink{classPregunta}{Pregunta} $>$\+::node n, bool valor)
+\begin{DoxyCompactList}\small\item\em Metodo que devuelve un par de valores con la informacion de la jugada actual. \end{DoxyCompactList}\item 
+void \hyperlink{classQuienEsQuien_aa15de9675449659e796f66e6f3ca81d9}{insertar\+\_\+jugador} (string nombre, vector$<$ bool $>$ nuevo)
+\begin{DoxyCompactList}\small\item\em Metodo para insertar un jugador a mi arbol. \end{DoxyCompactList}\item 
+bool \hyperlink{classQuienEsQuien_a8ca83ec923ee214026bdae93989063e4}{esta\+\_\+vector} (vector$<$ bool $>$ prueba)
+\begin{DoxyCompactList}\small\item\em Metodo auxiliar usando por insertar\+\_\+jugador que comprueba si un vector booleano existe o no en el tablero. \end{DoxyCompactList}\item 
+void \hyperlink{classQuienEsQuien_a0af1faf763f8f96ee2f346928b256460}{eliminar\+\_\+jugador} (string nombre)
+\begin{DoxyCompactList}\small\item\em Metodo que elimina un jugador pasado por parametro de un arbol. \end{DoxyCompactList}\item 
+\hyperlink{classbintree}{bintree}$<$ \hyperlink{classPregunta}{Pregunta} $>$ \hyperlink{classQuienEsQuien_a94094336e901975020d712a2bfc2b963}{crear\+\_\+arbol\+\_\+mejorado} ()
+\begin{DoxyCompactList}\small\item\em Funcion que crea un nuevo arbol mejorado. Para ello, utiliza la entropia del tablero para crear un nuevo arbol. Cada pregunta que se crea nuevamente, dependera del valor booleano y de la entropia de los valores que queden, que no hayan sido usados. Para ello, al contrario de como hice el arbol normal, use estructuras auxiliares. Para hacer uso de esto, ademas implemente varios metodos adicionales\+: posicion\+\_\+entropia(matriz,atri), hijo\+\_\+izquierda(matriz,posicion,atri,n,per), hijo\+\_\+izquierda(matriz,posicion,atri,n,per); N\+O\+TA\+: Podria haber hecho una funcion para llamar a estos dos ultimos metodos. Por falta de tiempo, junto a otros, lo he dejado asi. \end{DoxyCompactList}\item 
+int \hyperlink{classQuienEsQuien_a0444a0f0d2f9afcb92df87ced126a42c}{posicion\+\_\+entropia} (vector$<$ vector$<$ bool $>$$>$ matriz, vector$<$ string $>$ atri)
+\begin{DoxyCompactList}\small\item\em Metodo que devuelve la posicion del atributo con mejor entropia. \end{DoxyCompactList}\item 
+void \hyperlink{classQuienEsQuien_a54b6b326775cc6f4967cd50b31736fc1}{hijo\+\_\+izquierda} (vector$<$ vector$<$ bool $>$$>$ matriz, int posicion, vector$<$ string $>$ atri, \hyperlink{classbintree}{bintree}$<$ \hyperlink{classPregunta}{Pregunta} $>$\+::node n, vector$<$ string $>$ per)
+\begin{DoxyCompactList}\small\item\em Metodo que inserta un hijo en la izquierda. \end{DoxyCompactList}\item 
+void \hyperlink{classQuienEsQuien_a08e83a35f30d0f8a7bd171c58db182a7}{hijo\+\_\+derecha} (vector$<$ vector$<$ bool $>$$>$ matriz, int posicion, vector$<$ string $>$ atri, \hyperlink{classbintree}{bintree}$<$ \hyperlink{classPregunta}{Pregunta} $>$\+::node n, vector$<$ string $>$ per)
+\begin{DoxyCompactList}\small\item\em Metodo que inserta un hijo en la derecha. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ bool $>$ $>$ \hyperlink{classQuienEsQuien_a6b183ac890b8aefa1008e54fcd2704d5}{pelador} (vector$<$ vector$<$ bool $>$$>$ matriz, int posicion, bool valor, vector$<$ string $>$ \&per)
+\begin{DoxyCompactList}\small\item\em Se encarga de crear una nueva matriz a partir de otra, la posicion del valor, el valor en cuestion (0 o 1) y un vector de persojes. \end{DoxyCompactList}\item 
+void \hyperlink{classQuienEsQuien_ac0763b7ac0c24a3c54c2affaabe1f017}{tablero\+\_\+aleatorio} (int numero\+\_\+de\+\_\+personajes)
+\begin{DoxyCompactList}\small\item\em Rellena los datos del \hyperlink{classQuienEsQuien}{Quien\+Es\+Quien} con un tablero calculado aleatoriamente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \hyperlink{classQuienEsQuien_a2d1e36c1b1d93621e8544d645cfff44c}{operator$>$$>$} (istream \&is, \hyperlink{classQuienEsQuien}{Quien\+Es\+Quien} \&quien\+Es\+Quien)
+\begin{DoxyCompactList}\small\item\em Operador de extraccion de flujo. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{classQuienEsQuien_a0fd056740c595bda2964d68dc262a639}{operator$<$$<$} (ostream \&os, const \hyperlink{classQuienEsQuien}{Quien\+Es\+Quien} \&quien\+Es\+Quien)
+\begin{DoxyCompactList}\small\item\em Operador de insercion de flujo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+T.\+D.\+A. \hyperlink{classQuienEsQuien}{Quien\+Es\+Quien}. 
+
+\begin{DoxyAuthor}{Autor}
+Ramon Sanchez Garcia
+\end{DoxyAuthor}
+Conjunto de personajes con sus atributos. Lo primero que he hecho ha sido hacer el árbol de forma normal. Creo mi arbol, como explico en la seccion \char`\"{}crear\+\_\+arbol\char`\"{}, usando los datos leidos.
+
+Se ha implementado tambien una mejora que crea el arbol usando entropia. Para ver como lo he hecho, consulta la seccion \char`\"{}crear\+\_\+arbol\+\_\+mejorado\char`\"{}.
+
+Finalmente he implementado tambien los metodos obligatorios y opcionales. Toda la informacion de como los he hecho lo explico en sus correspondientes metodos. 
+
+\subsection{Documentación del constructor y destructor}
+\index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{Quien\+Es\+Quien(const Quien\+Es\+Quien \&quien\+Es\+Quien)}{QuienEsQuien(const QuienEsQuien &quienEsQuien)}}]{\setlength{\rightskip}{0pt plus 5cm}Quien\+Es\+Quien\+::\+Quien\+Es\+Quien (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quien\+Es\+Quien} \&}]{quien\+Es\+Quien}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a362b7513eba83170d18d98946bc01d87}{}\label{classQuienEsQuien_a362b7513eba83170d18d98946bc01d87}
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em quien\+Es\+Quien} & \hyperlink{classQuienEsQuien}{Quien\+Es\+Quien} a copiar. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!ajuste\+\_\+nodos\+\_\+nulos@{ajuste\+\_\+nodos\+\_\+nulos}}
+\index{ajuste\+\_\+nodos\+\_\+nulos@{ajuste\+\_\+nodos\+\_\+nulos}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{ajuste\+\_\+nodos\+\_\+nulos(bintree$<$ Pregunta $>$\+::node n)}{ajuste_nodos_nulos(bintree< Pregunta >::node n)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Quien\+Es\+Quien\+::ajuste\+\_\+nodos\+\_\+nulos (
+\begin{DoxyParamCaption}
+\item[{{\bf bintree}$<$ {\bf Pregunta} $>$\+::node}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a420bdb4aa9eafeac062279e3968f8f1f}{}\label{classQuienEsQuien_a420bdb4aa9eafeac062279e3968f8f1f}
+
+
+Metodo para ajustar los hijos nulos. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & nodo sobre el que trabajare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+valor booleano que sera true si he modificado el arbol, false si no he realizado nada.
+\end{DoxyReturn}
+Metodo con mas \char`\"{}chicha\char`\"{} sobre como eliminar nodos redudantes. Y que mas dolor de cabeza me ha traido. Mi implementacion consiste en lo siguiente\+: Voy a comprobar si mi nodo \char`\"{}n\char`\"{} tiene algun hijo nulo. Si lo tiene, y ademas ese nodo no es el root (imposible que lo sea ademas, pero puede pasar), compruebo si ese nodo es hijo izquierdo o derecho de su padre. Dependiendo de la opcion, ahora compruebo cual de sus hijos es nulo, cambio dicho hijo por su padre usando los metodos prune e insert, y cambio el valor booleano de control a true (creado inicialmente a false).
+
+En caso que se de que el nodo root tenga un hijo nulo, el prune lo hago de otra forma, si subirme a la posicion padre del root(), ya que no existe.
+
+Este metodo devuelve el valor booleano que sera utilizado por la funcion eliminar\+\_\+nodos\+\_\+redundantes(node). \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!contar@{contar}}
+\index{contar@{contar}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{contar(bintree$<$ Pregunta $>$\+::node nodo)}{contar(bintree< Pregunta >::node nodo)}}]{\setlength{\rightskip}{0pt plus 5cm}int Quien\+Es\+Quien\+::contar (
+\begin{DoxyParamCaption}
+\item[{{\bf bintree}$<$ {\bf Pregunta} $>$\+::node}]{nodo}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a39024ba42b698f04960add57b177aa9f}{}\label{classQuienEsQuien_a39024ba42b698f04960add57b177aa9f}
+
+
+Metodo para contar el numero de nodos a partir de un nodo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nodo} & el nodo desde el que quiero empezar a contar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+total numero de nodos
+\end{DoxyReturn}
+Aunque ya tiene uno bintree, como es privado y no quiero tocar ese fichero, voy a crearme uno propio.
+
+Se utilizara para calcular la profundiad promedio. \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!crear\+\_\+arbol\+\_\+mejorado@{crear\+\_\+arbol\+\_\+mejorado}}
+\index{crear\+\_\+arbol\+\_\+mejorado@{crear\+\_\+arbol\+\_\+mejorado}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{crear\+\_\+arbol\+\_\+mejorado()}{crear_arbol_mejorado()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bintree}$<${\bf Pregunta}$>$ Quien\+Es\+Quien\+::crear\+\_\+arbol\+\_\+mejorado (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a94094336e901975020d712a2bfc2b963}{}\label{classQuienEsQuien_a94094336e901975020d712a2bfc2b963}
+
+
+Funcion que crea un nuevo arbol mejorado. Para ello, utiliza la entropia del tablero para crear un nuevo arbol. Cada pregunta que se crea nuevamente, dependera del valor booleano y de la entropia de los valores que queden, que no hayan sido usados. Para ello, al contrario de como hice el arbol normal, use estructuras auxiliares. Para hacer uso de esto, ademas implemente varios metodos adicionales\+: posicion\+\_\+entropia(matriz,atri), hijo\+\_\+izquierda(matriz,posicion,atri,n,per), hijo\+\_\+izquierda(matriz,posicion,atri,n,per); N\+O\+TA\+: Podria haber hecho una funcion para llamar a estos dos ultimos metodos. Por falta de tiempo, junto a otros, lo he dejado asi. 
+
+\begin{DoxyReturn}{Devuelve}
+El nuevo arbol mejorado 
+\end{DoxyReturn}
+\index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!eliminar\+\_\+jugador@{eliminar\+\_\+jugador}}
+\index{eliminar\+\_\+jugador@{eliminar\+\_\+jugador}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{eliminar\+\_\+jugador(string nombre)}{eliminar_jugador(string nombre)}}]{\setlength{\rightskip}{0pt plus 5cm}void Quien\+Es\+Quien\+::eliminar\+\_\+jugador (
+\begin{DoxyParamCaption}
+\item[{string}]{nombre}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a0af1faf763f8f96ee2f346928b256460}{}\label{classQuienEsQuien_a0af1faf763f8f96ee2f346928b256460}
+
+
+Metodo que elimina un jugador pasado por parametro de un arbol. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre} & El nombre del jugador que deseo eliminar\\
+\hline
+\end{DoxyParams}
+Lo que hace este metodo es buscar el vector de atributos en el tablero que corresponde a dicho personaje. Si no lo encuentra, mostrara que no existe. En caso de que lo encuentre, voy a hacer un recorrido iterativo desde la Raiz del arbol con ese vector booleano. Cuando llegue al hijo, insertara como padre la otra rama. Para eso, utiliza la funcion prune, e inserta en el nodo padre de este la nueva rama.
+
+Adicionalmente reduce el numero de jugadores del nodo padre en 1. N\+O\+TA I\+M\+P\+O\+R\+T\+A\+N\+TE\+: Este metodo no funciona correctamente con la V\+E\+R\+S\+I\+ON M\+E\+J\+O\+R\+A\+DA \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!eliminar\+\_\+nodos\+\_\+redundantes@{eliminar\+\_\+nodos\+\_\+redundantes}}
+\index{eliminar\+\_\+nodos\+\_\+redundantes@{eliminar\+\_\+nodos\+\_\+redundantes}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{eliminar\+\_\+nodos\+\_\+redundantes()}{eliminar_nodos_redundantes()}}]{\setlength{\rightskip}{0pt plus 5cm}void Quien\+Es\+Quien\+::eliminar\+\_\+nodos\+\_\+redundantes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a010586f119ad0966d35c64382a64e3bc}{}\label{classQuienEsQuien_a010586f119ad0966d35c64382a64e3bc}
+
+
+Metodo que modifica el arbol de preguntas para que haya preguntas redundantes. 
+
+\begin{DoxyPostcond}{Postcondición}
+El arbol de preguntas se modifica.
+\end{DoxyPostcond}
+Esta funcion llama a eliminar\+\_\+nodos\+\_\+redundantes(arbol.\+root()). \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!eliminar\+\_\+nodos\+\_\+redundantes@{eliminar\+\_\+nodos\+\_\+redundantes}}
+\index{eliminar\+\_\+nodos\+\_\+redundantes@{eliminar\+\_\+nodos\+\_\+redundantes}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{eliminar\+\_\+nodos\+\_\+redundantes(bintree$<$ Pregunta $>$\+::node n)}{eliminar_nodos_redundantes(bintree< Pregunta >::node n)}}]{\setlength{\rightskip}{0pt plus 5cm}void Quien\+Es\+Quien\+::eliminar\+\_\+nodos\+\_\+redundantes (
+\begin{DoxyParamCaption}
+\item[{{\bf bintree}$<$ {\bf Pregunta} $>$\+::node}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a0868e2c4013917db4cd79474c42e0386}{}\label{classQuienEsQuien_a0868e2c4013917db4cd79474c42e0386}
+
+
+Metodo que modifica el arbol de preguntas para que haya preguntas redundantes. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & nodo sobre el que actuara. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondición}
+El arbol de preguntas se modifica.
+\end{DoxyPostcond}
+A diferencia de su version sin parametro, esta recibe un nodo, y comprueba si ese nodo es nulo. En caso de que no lo sea, ajustara los nodos nulos que tenga. En caso de que lo tenga, vuelvo a ejecutarse el mismo proceso desde el root() del arbol (el motivo es que cuando haga el ajuste, puede que aparezcan nuevos nodos nulos, he de volver a comprobar desde arriba). Si no puedo ajustar, compruebo a partir de los nodos izquierda y derecha.
+
+N\+O\+TA\+: Dado que he estado solo, tuve que pedir ayuda a otros compañeros sobre este metodo. \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!esta\+\_\+vector@{esta\+\_\+vector}}
+\index{esta\+\_\+vector@{esta\+\_\+vector}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{esta\+\_\+vector(vector$<$ bool $>$ prueba)}{esta_vector(vector< bool > prueba)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Quien\+Es\+Quien\+::esta\+\_\+vector (
+\begin{DoxyParamCaption}
+\item[{vector$<$ bool $>$}]{prueba}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a8ca83ec923ee214026bdae93989063e4}{}\label{classQuienEsQuien_a8ca83ec923ee214026bdae93989063e4}
+
+
+Metodo auxiliar usando por insertar\+\_\+jugador que comprueba si un vector booleano existe o no en el tablero. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em prueba} & el vector que deseo buscar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+esta a true o false si existe
+\end{DoxyReturn}
+Lo que hace es buscar este vector en el tablero que teniamos. Dada la estructura del tablero, puedo comprobar cada fila con este vector usando un iterador que recorre todas las posiciones con el vector. Si lo encuentra, devuelve true, en caso contrario, false. \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!hijo\+\_\+derecha@{hijo\+\_\+derecha}}
+\index{hijo\+\_\+derecha@{hijo\+\_\+derecha}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{hijo\+\_\+derecha(vector$<$ vector$<$ bool $>$$>$ matriz, int posicion, vector$<$ string $>$ atri, bintree$<$ Pregunta $>$\+::node n, vector$<$ string $>$ per)}{hijo_derecha(vector< vector< bool >> matriz, int posicion, vector< string > atri, bintree< Pregunta >::node n, vector< string > per)}}]{\setlength{\rightskip}{0pt plus 5cm}void Quien\+Es\+Quien\+::hijo\+\_\+derecha (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector$<$ bool $>$$>$}]{matriz, }
+\item[{int}]{posicion, }
+\item[{vector$<$ string $>$}]{atri, }
+\item[{{\bf bintree}$<$ {\bf Pregunta} $>$\+::node}]{n, }
+\item[{vector$<$ string $>$}]{per}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a08e83a35f30d0f8a7bd171c58db182a7}{}\label{classQuienEsQuien_a08e83a35f30d0f8a7bd171c58db182a7}
+
+
+Metodo que inserta un hijo en la derecha. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em posicion} & la posicion del atributo con mejor entropia \\
+\hline
+{\em matriz} & la matriz que tengo actualmente \\
+\hline
+{\em atri} & el vector de atributos que tengo actualmente \\
+\hline
+{\em n} & el nodo de pregunta en el que estamos \\
+\hline
+{\em per} & vector de personajes que tengo actualmente\\
+\hline
+\end{DoxyParams}
+Metodo analogo al de izquierda. Realiza lo mismo, pero en la parte derecha N\+O\+TA\+: Podria haber hecho un metodo que hiciese ambas cosas a la vez. Pero no se me ha ocurrido como, ni tengo tiempo. Estoy haciendo todo esto solo, y no dispongo de mas tiempo. Siento mucho que la implementacion sea tan \char`\"{}guarra\char`\"{}, pero no se que hacer ya con tan poco tiempo. \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!hijo\+\_\+izquierda@{hijo\+\_\+izquierda}}
+\index{hijo\+\_\+izquierda@{hijo\+\_\+izquierda}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{hijo\+\_\+izquierda(vector$<$ vector$<$ bool $>$$>$ matriz, int posicion, vector$<$ string $>$ atri, bintree$<$ Pregunta $>$\+::node n, vector$<$ string $>$ per)}{hijo_izquierda(vector< vector< bool >> matriz, int posicion, vector< string > atri, bintree< Pregunta >::node n, vector< string > per)}}]{\setlength{\rightskip}{0pt plus 5cm}void Quien\+Es\+Quien\+::hijo\+\_\+izquierda (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector$<$ bool $>$$>$}]{matriz, }
+\item[{int}]{posicion, }
+\item[{vector$<$ string $>$}]{atri, }
+\item[{{\bf bintree}$<$ {\bf Pregunta} $>$\+::node}]{n, }
+\item[{vector$<$ string $>$}]{per}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a54b6b326775cc6f4967cd50b31736fc1}{}\label{classQuienEsQuien_a54b6b326775cc6f4967cd50b31736fc1}
+
+
+Metodo que inserta un hijo en la izquierda. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em posicion} & la posicion del atributo con mejor entropia \\
+\hline
+{\em matriz} & la matriz que tengo actualmente \\
+\hline
+{\em atri} & el vector de atributos que tengo actualmente \\
+\hline
+{\em n} & el nodo de pregunta en el que estamos \\
+\hline
+{\em per} & vector de personajes que tengo actualmente\\
+\hline
+\end{DoxyParams}
+Lo que hace esta funcion en primer lugar es pelar dicha matriz, usando para ello la posicion el valor \char`\"{}0\char`\"{}, junto a \char`\"{}matriz\char`\"{} y atributos. Usa 0 porque esta a la izquierda. Guarda la nueva matriz en una variable llamada \char`\"{}nueva\char`\"{}. Despues, usando esa nueva matriz, si hay varios personajes y atributos (usa el numero de filas de la nueva matriz y el tamaño de \char`\"{}atri\char`\"{}), busca el de mayor entropia, y lo inserta. Si solo hay un atributo, pero uno o dos (no puede haber mas debido a la implementacion), añadira estos personajes manualmente. En caso que haya varios atributos pero un personaje solo, añade ese personaje directamente.
+
+Para ahorrarme problemas, copio el vector de atributos a otro, llamado \char`\"{}a\char`\"{}. De dicho vector, le quito los atributos insertados. Si siguen quedando, ejecuto por derecha e izquierda.
+
+En caso de que aun haya personajes que añadir, ejecuto recursivamente este metodo y el de la parte derecha, con los nuevos objetos creados. \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!info\+\_\+jugada@{info\+\_\+jugada}}
+\index{info\+\_\+jugada@{info\+\_\+jugada}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{info\+\_\+jugada(bintree$<$ Pregunta $>$\+::node n, bool valor)}{info_jugada(bintree< Pregunta >::node n, bool valor)}}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$string,string$>$ Quien\+Es\+Quien\+::info\+\_\+jugada (
+\begin{DoxyParamCaption}
+\item[{{\bf bintree}$<$ {\bf Pregunta} $>$\+::node}]{n, }
+\item[{bool}]{valor}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_abab84d08b95044e18858aae863337ea1}{}\label{classQuienEsQuien_abab84d08b95044e18858aae863337ea1}
+
+
+Metodo que devuelve un par de valores con la informacion de la jugada actual. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & nodo en cuestion que hemos consultado \\
+\hline
+{\em valor} & decision escogida \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+pair con los string del atributo y su respuesta (si/no)
+\end{DoxyReturn}
+Este metodo se encarga de recibir un nodo y lo que hemos respondido, y devolver un pair de la forma pair$<$string, string$>$ con el nombre del del atributo y su contestacion. Todos estos pair, como dije, se almacenan en el metodo jugar, dentro de un vector$<$pair$<$string,string$>$$>$, el cual se va recorriendo cada vez que he jugado. \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!informacion\+\_\+jugada@{informacion\+\_\+jugada}}
+\index{informacion\+\_\+jugada@{informacion\+\_\+jugada}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{informacion\+\_\+jugada(bintree$<$ Pregunta $>$\+::node jugada\+\_\+actual)}{informacion_jugada(bintree< Pregunta >::node jugada_actual)}}]{\setlength{\rightskip}{0pt plus 5cm}set$<$string$>$ Quien\+Es\+Quien\+::informacion\+\_\+jugada (
+\begin{DoxyParamCaption}
+\item[{{\bf bintree}$<$ {\bf Pregunta} $>$\+::node}]{jugada\+\_\+actual}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a16816dd39d95ad489e44469f89fabbd4}{}\label{classQuienEsQuien_a16816dd39d95ad489e44469f89fabbd4}
+
+
+Dado un estado del tablero devuelve los nombres de los personajes que aun no han sido tumbados en el tablero. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em jugada\+\_\+actual} & Nodo del estado del tablero.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Conjunto de personajes que no han sido tumbados en el tablero.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+El arbol del \hyperlink{classQuienEsQuien}{Quien\+Es\+Quien} receptor debe haber sido construido previamente. 
+
+El nodo indicado debe ser un nodo del arbol del \hyperlink{classQuienEsQuien}{Quien\+Es\+Quien} receptor.
+\end{DoxyPrecond}
+Devuelve un set con todos los personajes que aun son hijos de ese nodo. Es decir, cuando llego a un nodo, busco todos las hojas que hay a partir de ese nodo y las voy insertando en un set. Realizo este proceso recursivamente para buscar y almaceno el resultado en un set. Para hacer esto he declarado el union\+\_\+jugadas.
+
+Finalmente obtendre un set con todos los jugadores/nodos hojas a partir de ese nodo \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!iniciar\+\_\+juego@{iniciar\+\_\+juego}}
+\index{iniciar\+\_\+juego@{iniciar\+\_\+juego}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{iniciar\+\_\+juego()}{iniciar_juego()}}]{\setlength{\rightskip}{0pt plus 5cm}void Quien\+Es\+Quien\+::iniciar\+\_\+juego (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a381bcd553e7c0231bb1f33e67ae3c653}{}\label{classQuienEsQuien_a381bcd553e7c0231bb1f33e67ae3c653}
+
+
+Inicializa el juego. 
+
+\begin{DoxyPostcond}{Postcondición}
+Si la partida anterior no haba terminado se pierde el progreso. He creado un \char`\"{}robot\char`\"{} llamado Monika, el cual te hara preguntas. Dependiendo de la respuesta, preguntara por un nuevo atributo o encontrara el personaje. 
+\end{DoxyPostcond}
+\index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!insertar\+\_\+jugador@{insertar\+\_\+jugador}}
+\index{insertar\+\_\+jugador@{insertar\+\_\+jugador}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{insertar\+\_\+jugador(string nombre, vector$<$ bool $>$ nuevo)}{insertar_jugador(string nombre, vector< bool > nuevo)}}]{\setlength{\rightskip}{0pt plus 5cm}void Quien\+Es\+Quien\+::insertar\+\_\+jugador (
+\begin{DoxyParamCaption}
+\item[{string}]{nombre, }
+\item[{vector$<$ bool $>$}]{nuevo}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_aa15de9675449659e796f66e6f3ca81d9}{}\label{classQuienEsQuien_aa15de9675449659e796f66e6f3ca81d9}
+
+
+Metodo para insertar un jugador a mi arbol. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre} & el jugador que quiero insertar \\
+\hline
+{\em nuevo} & el vector de decisiones, que corresponde a los parametros\\
+\hline
+\end{DoxyParams}
+Este metodo se encargara de buscar el nodo, mientras no tenga hijos nulos, usando el vector booleano. Cuando llega a esa posicion, que S\+I\+E\+M\+P\+RE S\+E\+RA una hoja, cojo esa hoja, la guardo en una funcion auxiliar. Vuelvo al nodo padre e inserto ambos hijos. Dado a la implementacion, el nuevo jugador no tendra los mismos atributos que el que ya existia. Por ello inserto ese nuevo jugador en la parte que corresponda, y el otro que ya teniamos, en la otra. Ademas el atributo de ese nodo padre sera ahora el que corresponda de mi vector de atributos, el cual me he ido desplazando a la vez que me desplazaba por el arbol. N\+O\+TA I\+M\+P\+O\+R\+T\+A\+N\+TE\+: Este metodo no funciona correctamente con la V\+E\+R\+S\+I\+ON M\+E\+J\+O\+R\+A\+DA debido a como estan organizados los atributos en el otro \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!operator=@{operator=}}
+\index{operator=@{operator=}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{operator=(const Quien\+Es\+Quien \&quien\+Es\+Quien)}{operator=(const QuienEsQuien &quienEsQuien)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quien\+Es\+Quien}\& Quien\+Es\+Quien\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quien\+Es\+Quien} \&}]{quien\+Es\+Quien}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_ae7a4139787934cca03996687460935dd}{}\label{classQuienEsQuien_ae7a4139787934cca03996687460935dd}
+
+
+Sobrecarga del operador de asignacion. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em quien\+Es\+Quien} & objeto a copiar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Referencia al objeto copiado. 
+\end{DoxyReturn}
+\index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!pelador@{pelador}}
+\index{pelador@{pelador}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{pelador(vector$<$ vector$<$ bool $>$$>$ matriz, int posicion, bool valor, vector$<$ string $>$ \&per)}{pelador(vector< vector< bool >> matriz, int posicion, bool valor, vector< string > &per)}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$bool$>$ $>$ Quien\+Es\+Quien\+::pelador (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector$<$ bool $>$$>$}]{matriz, }
+\item[{int}]{posicion, }
+\item[{bool}]{valor, }
+\item[{vector$<$ string $>$ \&}]{per}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a6b183ac890b8aefa1008e54fcd2704d5}{}\label{classQuienEsQuien_a6b183ac890b8aefa1008e54fcd2704d5}
+
+
+Se encarga de crear una nueva matriz a partir de otra, la posicion del valor, el valor en cuestion (0 o 1) y un vector de persojes. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em matriz,es} & la matriz original que queremos editar \\
+\hline
+{\em posicion,la} & posicion del valor en la matriz \\
+\hline
+{\em valor,el} & valor que queremos buscar. Eliminamos aquellas filas a partir de la posicion que no sea de este valor. \\
+\hline
+{\em per,es} & un vector de personajes del que se eliminara los personajes a la vez que se eliminan las filas del tablero. Se elimina el personaje correspondiente. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La nueva matriz \char`\"{}pelada\char`\"{}.
+\end{DoxyReturn}
+Dicha funcion buscara la posicion en la nueva matriz, y se quedara con las filas cuyo valor, en la posicion que le hemos pasado por parametro, sea el indicado por parameto. Adicionalmente borra los personajes a los que corresponden esas filas de valores. Tambien borra la columna. Devuelve la nueva matriz. \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!posicion\+\_\+entropia@{posicion\+\_\+entropia}}
+\index{posicion\+\_\+entropia@{posicion\+\_\+entropia}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{posicion\+\_\+entropia(vector$<$ vector$<$ bool $>$$>$ matriz, vector$<$ string $>$ atri)}{posicion_entropia(vector< vector< bool >> matriz, vector< string > atri)}}]{\setlength{\rightskip}{0pt plus 5cm}int Quien\+Es\+Quien\+::posicion\+\_\+entropia (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector$<$ bool $>$$>$}]{matriz, }
+\item[{vector$<$ string $>$}]{atri}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a0444a0f0d2f9afcb92df87ced126a42c}{}\label{classQuienEsQuien_a0444a0f0d2f9afcb92df87ced126a42c}
+
+
+Metodo que devuelve la posicion del atributo con mejor entropia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em matriz} & tablero donde se aplicara la entropia \\
+\hline
+{\em atri} & vector de los atributos correspondientes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve la posicion del atributo con mejor entropia.
+\end{DoxyReturn}
+Lo he diseñado asi dado que cuando obtenga la posicion del atributo con mejor entropia, creare el nuevo objeto \hyperlink{classPregunta}{Pregunta} con la posicion de este atributo. Le paso ademas un array de atributos dado a que, como dije, estoy usando estructuras auxiliares, por lo que el vector de atributos sera diferente cada vez, por lo que hay que actuar sobre uno nuevo cada vez. \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!profundidad\+\_\+promedio\+\_\+hojas@{profundidad\+\_\+promedio\+\_\+hojas}}
+\index{profundidad\+\_\+promedio\+\_\+hojas@{profundidad\+\_\+promedio\+\_\+hojas}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{profundidad\+\_\+promedio\+\_\+hojas()}{profundidad_promedio_hojas()}}]{\setlength{\rightskip}{0pt plus 5cm}float Quien\+Es\+Quien\+::profundidad\+\_\+promedio\+\_\+hojas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_ae999ad6c20f9ebf6a710060b99741126}{}\label{classQuienEsQuien_ae999ad6c20f9ebf6a710060b99741126}
+
+
+Este metodo permite calcular la media de la profundidad de las hojas del arbol. Este valor representa el numero (promedio) de preguntas necesarias para adivinar cada personaje. A menor profundidad promedio, mejor solucion. Esta metrica es un indicador para evaluar la calidad de vuestra solucion. 
+
+\begin{DoxyReturn}{Devuelve}
+Profundidad media del arbol de preguntas.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+El arbol de preguntas debe haber sido construido previamente.
+\end{DoxyPrecond}
+Como se vio en teoria, la profundidad promedia se calcula como la suma de profundidades totales (para ello uso el metodo \hyperlink{classQuienEsQuien_a1535e054736d9920e8859b21697e372e}{total\+\_\+profundidad()}) entre el numero total de nodos (aunque ya tiene uno bintree, como esta privado y no quiero tocar el fichero para nada, voy a crear y usar el metodo \hyperlink{classQuienEsQuien_a39024ba42b698f04960add57b177aa9f}{contar()}) \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!tablero\+\_\+aleatorio@{tablero\+\_\+aleatorio}}
+\index{tablero\+\_\+aleatorio@{tablero\+\_\+aleatorio}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{tablero\+\_\+aleatorio(int numero\+\_\+de\+\_\+personajes)}{tablero_aleatorio(int numero_de_personajes)}}]{\setlength{\rightskip}{0pt plus 5cm}void Quien\+Es\+Quien\+::tablero\+\_\+aleatorio (
+\begin{DoxyParamCaption}
+\item[{int}]{numero\+\_\+de\+\_\+personajes}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_ac0763b7ac0c24a3c54c2affaabe1f017}{}\label{classQuienEsQuien_ac0763b7ac0c24a3c54c2affaabe1f017}
+
+
+Rellena los datos del \hyperlink{classQuienEsQuien}{Quien\+Es\+Quien} con un tablero calculado aleatoriamente. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em numero\+\_\+de\+\_\+personajes} & Numero de personajes que tiene el tablero a crear. \\
+\hline
+\end{DoxyParams}
+\index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!tengo\+\_\+hijos\+\_\+nulos@{tengo\+\_\+hijos\+\_\+nulos}}
+\index{tengo\+\_\+hijos\+\_\+nulos@{tengo\+\_\+hijos\+\_\+nulos}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{tengo\+\_\+hijos\+\_\+nulos(bintree$<$ Pregunta $>$\+::node n)}{tengo_hijos_nulos(bintree< Pregunta >::node n)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Quien\+Es\+Quien\+::tengo\+\_\+hijos\+\_\+nulos (
+\begin{DoxyParamCaption}
+\item[{{\bf bintree}$<$ {\bf Pregunta} $>$\+::node}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a3b283af407756659fb75fba1725f84c0}{}\label{classQuienEsQuien_a3b283af407756659fb75fba1725f84c0}
+
+
+Metodo auxiliar para comprobar si un nodo tiene hijos nulos. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & nodo que quiero comprobar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+valor booleano que sera falso si no tiene, true si tiene alguno
+\end{DoxyReturn}
+Este metodo sera usado para comprobar si un hijo tiene algun hijo nulos para eliminar hijos redundantes. \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!total\+\_\+profundidad@{total\+\_\+profundidad}}
+\index{total\+\_\+profundidad@{total\+\_\+profundidad}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{total\+\_\+profundidad(bintree$<$ Pregunta $>$\+::node n, int acum)}{total_profundidad(bintree< Pregunta >::node n, int acum)}}]{\setlength{\rightskip}{0pt plus 5cm}int Quien\+Es\+Quien\+::total\+\_\+profundidad (
+\begin{DoxyParamCaption}
+\item[{{\bf bintree}$<$ {\bf Pregunta} $>$\+::node}]{n, }
+\item[{int}]{acum}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a1535e054736d9920e8859b21697e372e}{}\label{classQuienEsQuien_a1535e054736d9920e8859b21697e372e}
+
+
+Metodo para obtener el total de profundidades de cada nodo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & nodo al que quiero calcular la profundidades  acum total de \char`\"{}pronfundidades\char`\"{}, que ira aumentando\\
+\hline
+\end{DoxyParams}
+Este metodo se encarga de calcular el total de profundidad del arbol que se calcula como la suma de la profundidad de todos los nodos.
+
+Se utilizara para calcular la profundiad promedio. \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!union\+\_\+jugadas@{union\+\_\+jugadas}}
+\index{union\+\_\+jugadas@{union\+\_\+jugadas}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{union\+\_\+jugadas(set$<$ string $>$ primera, set$<$ string $>$ segunda)}{union_jugadas(set< string > primera, set< string > segunda)}}]{\setlength{\rightskip}{0pt plus 5cm}set$<$string$>$ Quien\+Es\+Quien\+::union\+\_\+jugadas (
+\begin{DoxyParamCaption}
+\item[{set$<$ string $>$}]{primera, }
+\item[{set$<$ string $>$}]{segunda}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a60fd517d09369436bcfc6914dd964e6a}{}\label{classQuienEsQuien_a60fd517d09369436bcfc6914dd964e6a}
+
+
+Metodo auxiliar, utilizado para unir dos set. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em primera} & El primer set \\
+\hline
+{\em segunda} & El segundo set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+union La union de las dos jugadas
+\end{DoxyReturn}
+Implemento este metodo dado a que informacion\+\_\+jugada obtendra una jugada, pero quiero un conjunto de jugadas. Por eso voy uniendo cada nueva jugada al resto de jugadas. \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!usar\+\_\+arbol@{usar\+\_\+arbol}}
+\index{usar\+\_\+arbol@{usar\+\_\+arbol}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{usar\+\_\+arbol(bintree$<$ Pregunta $>$ arbol\+\_\+nuevo)}{usar_arbol(bintree< Pregunta > arbol_nuevo)}}]{\setlength{\rightskip}{0pt plus 5cm}void Quien\+Es\+Quien\+::usar\+\_\+arbol (
+\begin{DoxyParamCaption}
+\item[{{\bf bintree}$<$ {\bf Pregunta} $>$}]{arbol\+\_\+nuevo}
+\end{DoxyParamCaption}
+)}\hypertarget{classQuienEsQuien_a0949bd026c2beeaacbf36fd0ba6fc3a9}{}\label{classQuienEsQuien_a0949bd026c2beeaacbf36fd0ba6fc3a9}
+
+
+Sustituye el arbol actual por el arbol pasado por parmetro. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em arbol\+\_\+nuevo} & Arbol de preguntas que sustituye al actual.\\
+\hline
+\end{DoxyParams}
+Para crear el arbol he hecho un proceso recursivo. En primer lugar creo el arbol cuya raiz es el primer atributo del vector de atributos. Ahora empiezo a moverme. Si es 0, me muevo a hijo izquierda; si es 1, me muevo al hijo derecha. Ahi inserto el siguiente atributo. Asi hasta llegar al final, donde insertare el personaje correspondiente, es decir, el primero de la lista de personajes. Repito el proceso con el resto de filas, de nuevo, desde el root. Pero hay que tener algo en cuenta\+: si el nodo ya existe, NO SE AÑ\+A\+DE N\+A\+DA. Este proceso va bien, pero hay un pequeño problema, ¿como calculo el numero de hijos antes de insertar nada?
+
+La primera idea que tuve fue la de insertar un numero de hijos de tamaño 2, salvo que no sea el ultimo, y luego hacer otro recorrido e ir editandolo. Pero he tenido una idea mejor, donde solo he de recorrer el arbol la mitad de veces. Cuando leo un vector para insertar un nodo, dicho vector booleano lo compruebo compruebo con los que le quedan \char`\"{}por debajo\char`\"{}, es decir, los que hay desde la posicion donde esta el hasta el final.
+
+Dicho de otra forma, voy a crear un iterador a la posicion de ese vector, y lo voy a comprobar a los que hay desde ese hasta el final. Pero no voy a comprobar el vector entero, sino que cada vez lo comparo hasta la posicion de dicho atributo. Es decir\+: Si tengo un vector \mbox{[}0 1 1\mbox{]} y lo que voy a añadir es el primer atributo, el que vale a \char`\"{}0\char`\"{} en este vector, he de comprobar cuantos tienen tambien como primera decision \char`\"{}0\char`\"{}, para el siguiente atributo tengo que buscar cuantos empiezan por \char`\"{}01\char`\"{}, para el siguiente \char`\"{}011\char`\"{}... La cantidad de vectores que empiecen por eso que coincidan, seran el numero de hijos.
+
+Esto puede provocar un error, ya que puedo añadir un nodo que ya exista con menor si hago esto... Pero dado a como busco el arbol, desde el primero al ultimo, y dado que no puedo añadir nodos a posiciones donde ya hay uno, esto funciona correctamente. Me explico\+: supongo que recorro el primer vector y ya he hecho un primer recorrido. Con eso tengo un nodo X que tiene 3 hijos. Ahora haciendo el segundo recorrido para el segundo vector, me sale ese mismo nodo con 2 hijos. No puedo añadirlo porque ya existia uno antes. Ademas, dada esta expliracion, siempre se añaden los nodos con el numero de hijos correcto. 
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Quien\+Es\+Quien} \&}]{quien\+Es\+Quien}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classQuienEsQuien_a0fd056740c595bda2964d68dc262a639}{}\label{classQuienEsQuien_a0fd056740c595bda2964d68dc262a639}
+
+
+Operador de insercion de flujo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & Stream de salida \\
+\hline
+{\em quien\+Es\+Quien} & Quien es quien a escribir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Referencia al stream de salida.
+\end{DoxyReturn}
+Escribe en {\itshape is} un quien es quien. El formato usado para la escritura es un T\+SV (tab-\/separated values) en el que las columnas tienen cabecera y son las preguntas. La ultima columna corresponde al nombre del personaje. Tras la cabecera se especifica en cada linea un personaje, teniendo el valor 1 o 0 si tiene/no tiene el atributo de la columna. En la ultima columna se da el nombre del personaje. \index{Quien\+Es\+Quien@{Quien\+Es\+Quien}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Quien\+Es\+Quien@{Quien\+Es\+Quien}}
+\subsubsection[{\texorpdfstring{operator$>$$>$}{operator>>}}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{is, }
+\item[{{\bf Quien\+Es\+Quien} \&}]{quien\+Es\+Quien}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classQuienEsQuien_a2d1e36c1b1d93621e8544d645cfff44c}{}\label{classQuienEsQuien_a2d1e36c1b1d93621e8544d645cfff44c}
+
+
+Operador de extraccion de flujo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em is} & Stream de entrada \\
+\hline
+{\em quien\+Es\+Quien} & Quien es quien a leer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Referencia al stream de entrada.
+\end{DoxyReturn}
+Lee de {\itshape is} un quien es quien y lo almacena en {\itshape quien\+Es\+Quien}. El formato aceptado para la lectura es un T\+SV (tab-\/separated values) en el que las columnas tienen cabecera y son las preguntas. La ultima columna corresponde al nombre del personaje. Tras la cabecera se especifica en cada lnea un personaje, teniendo el valor 1 o 0 si tiene/no tiene el atributo de la columna. En la ultima columna se da el nombre del personaje. 
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{quienesquien_8h}{quienesquien.\+h}\end{DoxyCompactItemize}
